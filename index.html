@@ -3,75 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" type="A quiz to determine how well you know the GOAT, Ed Reed\
+    (and if you are worthy of his presence)">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <main class="container">
-        <header class="header">
+    <main role="main" class="container">
+        <header role="banner" class="header">
             <section>
-                <img class="ravensLogo" src="images/top.png" alt="Baltimore Raven's Logo">
+                <img class="ravensLogo" src="images/top.png" alt="Baltimore Ravens Logo">
             </section>
             <section>
                 <ul>
-                    <li>Question: <span class="questionNum">0</span>/5</li>
-                    <li>Score: <span class="score">0</span></li>
+                    <li class="sizeAdjust">Question: <span class="questionNum">0</span>/5</li>
+                    <li class="sizeAdjust">Score: <span class="score">0</span></li>
                 </ul>
             </section>
-            <!-- <section class="backgroundBox box"> -->
-                <section class="startQuiz box">
-                    <h1>Ed Reed Start Screen</h1>
-                    <img class= "pics" src="images/start.jpeg" alt="Ed Reed with his Pro Football Hall of Fame Bust">
-                    <button class="button startButton" type="button">Start</button>
-                </section>
-
-                <p>(Only display one box at a time using javascript)</p>
-
-                <section class="questionBox box">
-                    <form>
-                    <fieldset>
-                        <legend class="questionText">Question?</legend>
-                        <label class="" for="answer1">
-                            <input class="radio" type="radio" id="answer1" name="answer" required>
-                            <span>This would be answer 1</span>
-                        </label>
-                        <label class="" for="answer2">
-                            <input class="radio" type="radio" id="answer2" name="answer" required>
-                            <span>This would be answer 2</span>
-                        </label>
-                        <label class="" for="answer3">
-                            <input class="radio" type="radio" id="answer3" name="answer" required>
-                            <span>This would be answer 3</span>
-                        </label>
-                        <label class="" for="answer4">
-                            <input class="radio" type="radio" id="answer4" name="answer" required>
-                            <span>This would be answer 4</span>
-                        </label>
-                        <button type="submit" class="submitButton button">Submit</button>
-                    </fieldset>
-                    </form>
-                </section>
-
-                <p>(Only display one box at a time using javascript)</p>
-
-                <section class="answerBox box">
-                    <h3 class="abovePic">Correct!</h3>
-                    <img class="pics" src="images/correct.jpg" alt="Mr. Reed pointing">
-                      <h3 class="belowPic">Ed Reed approves</h3>
-                      <button type="button" class="nextButton button">Next</button>
-                </section>
-
-                <section class="endQuiz box">
-                    <h3 class="abovePic">Ed Reed End Screen</h3>
-                    <img class= "pics" src="images/win.jpeg" alt="Ed Reed with the Lombardi Trophy">
-                    <h3 class="belowPic">Your score is <span class="score">5</span>/5</h3>
-                    <button class="button endButton" type="button">Restart?</button>
-                </section>
-                <!-- <section class="resultsBox box"></section> -->
-            <!-- </section> -->
         </header>
+        <section role="region" class="mainBox">
+            <section class="startQuiz box">
+                <h1>How well do you know the greatest Freesafety of all time?</h1>
+                <img class= "pics" src="images/start.jpeg" alt="Ed Reed with his Pro Football Hall of Fame Bust">
+                <button class="button startButton" type="button">Start</button>
+            </section>
+
+            <section class="questionBox box actionBox">
+            </section>
+
+            <section class="answerBox box actionBox">
+            </section>
+
+            <section class="resultsBox box actionBox">
+            </section>
+        </section>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     
 </body>
 </html>
